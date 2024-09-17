@@ -1,0 +1,46 @@
+body{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.container{
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(224, 52, 52);
+    padding: 50px;
+    margin: 50px;
+    border-radius: 50px;
+    width: 500px;
+    display: block;
+}
+
+.number{
+    margin: 20px;
+    height: 20px;
+    border-radius: 20px;
+    height: 35px;
+    text-align: center;
+}
+
+.btnEnviar {
+    background-color: #ff6c6c; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    padding: 10px 20px; /* Relleno */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px; /* Tamaño de la fuente */
+}
+
+#txtCalculadora{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btnEnviar:hover {
+    background-color: #0056b3; /* Color de fondo cuando se pasa el ratón */
+}
+
+
+
