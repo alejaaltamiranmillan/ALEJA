@@ -1,22 +1,30 @@
-const sumar = (a, b) => a + b;
-const restar = (a, b) => a - b;
-const multiplicar = (a, b) => a * b;
-const dividir = (a, b) => b !== 0 ? a / b : 'Error: División por cero';
 
-const evaluarEcuacion = (ecuacion) => {
-  try {
-    // Usa una función segura para evaluar la ecuación
-    // Esto es solo un ejemplo y no es seguro para producción
-    return Function(`'use strict'; return (${ecuacion})`)();
-  } catch (error) {
-    return 'Error en la ecuación';
-  }
-};
+/**
+ * Sumar dos cantidades numéricas
+ * @param {Number} a 
+ * @param {Number} b 
+ * @returns Number
+ */
+function add(a, b){
+    let number1 = parseInt(a);
+    let number2 = parseInt(b);
+    return number1 + number2;
+}
+
+function subtract(a, b){
+    let number1 = parseInt(a);
+    let number2 = parseInt(b);
+    return number1 - number2;
+}
+
+function multiply(a, b){
+    let number1 = parseInt(a);
+    let number2 = parseInt(b);
+    return number1 * number2;
+}
 
 module.exports = {
-  sumar,
-  restar,
-  multiplicar,
-  dividir,
-  evaluarEcuacion
-};
+    add,
+    subtract,
+    multiply
+}
